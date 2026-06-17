@@ -19,7 +19,7 @@ const FeaturedProjects = () => {
   const scrollStart = useRef(0)
 
   const featuredProjects = projects.filter((p) =>
-    ['el-bot', 'quadcopter', 'darcy', 'robotic-arm'].includes(p.slug)
+    ['el-bot', 'quadcopter', 'darcy', 'robotic-arm','eva-smart-home-security-automation-controller'].includes(p.slug)
   )
 
   // =========================
