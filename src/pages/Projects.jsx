@@ -12,27 +12,27 @@ const Projects = () => {
   return (
     <PageTransition>
 
-      <div className="bg-black min-h-screen pt-28 pb-32 px-8 md:px-16">
+      <div className="bg-black min-h-screen pt-20 md:pt-28 pb-20 md:pb-32 px-4 md:px-16 overflow-x-hidden">
 
         <div className="max-w-7xl mx-auto">
 
-          {/* Header */}
-          <div className="mb-20">
+          {/* HEADER */}
+          <div className="mb-12 md:mb-20">
 
-            <p className="text-gray-500 uppercase tracking-[0.4em] text-xs mb-4">
+            <p className="text-gray-500 uppercase tracking-[0.35em] md:tracking-[0.4em] text-xs mb-4">
               Research & Engineering
             </p>
 
-            <h1 className="font-orbitron text-white text-5xl md:text-7xl font-black">
+            <h1 className="font-orbitron text-white text-3xl md:text-7xl font-black">
               Projects
             </h1>
 
-            <div className="w-48 h-px bg-red-500/80 mt-8" />
+            <div className="w-28 md:w-48 h-px bg-red-500/80 mt-6 md:mt-8" />
 
           </div>
 
-          {/* Grid */}
-          <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-10">
+          {/* GRID */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10">
 
             {projects.map((project) => (
 
@@ -42,7 +42,7 @@ const Projects = () => {
                 className="group block"
               >
 
-                {/* Card */}
+                {/* CARD */}
                 <div
                   className="
                     overflow-hidden
@@ -61,7 +61,9 @@ const Projects = () => {
                     alt={project.title}
                     className="
                       w-full
-                      h-[420px]
+                      h-[240px]
+                      sm:h-[300px]
+                      md:h-[420px]
                       object-cover
                       brightness-75
                       transition-transform
@@ -70,13 +72,13 @@ const Projects = () => {
                     "
                   />
 
-                  <div className="p-6">
+                  <div className="p-4 md:p-6">
 
                     <p className="text-red-400 uppercase tracking-[0.3em] text-xs mb-3">
                       {project.category}
                     </p>
 
-                    <h2 className="text-white text-2xl font-semibold leading-tight">
+                    <h2 className="text-white text-lg md:text-2xl font-semibold leading-tight">
                       {project.title}
                     </h2>
 

@@ -7,8 +7,8 @@ export default function CinematicHero() {
   return (
     <section className="relative w-full min-h-screen overflow-hidden bg-black">
 
-      {/* 🌊 BACKGROUND */}
-      <div className="absolute inset-0 z-0">
+      {/* 🌊 BACKGROUND (optimized for mobile) */}
+      <div className="absolute inset-0 z-0 opacity-80 md:opacity-100">
         <LiquidEther
           colors={['#EE0C00', '#F7024D', '#D5E5E6']}
 
@@ -21,9 +21,9 @@ export default function CinematicHero() {
           iterationsViscous={48}
           iterationsPoisson={48}
 
-          resolution={0.5}
-          isBounce={false}
+          resolution={0.4}   /* ↓ reduced for mobile performance */
 
+          isBounce={false}
           autoDemo
           autoSpeed={0.5}
           autoIntensity={2.2}
@@ -34,39 +34,40 @@ export default function CinematicHero() {
         />
       </div>
 
-      {/* 🚫 NO OVERLAY — PURE VISUAL */}
+      {/* CONTENT */}
+      <div className="relative z-10 flex flex-col items-center justify-center min-h-screen text-center px-4 md:px-6">
 
-      {/* 🧠 CONTENT */}
-      <div className="relative z-10 flex flex-col items-center justify-center min-h-screen text-center px-6">
-
-        <p className="text-gray-400 tracking-[0.45em] uppercase text-[11px] mb-6">
+        {/* small label */}
+        <p className="text-gray-400 tracking-[0.35em] md:tracking-[0.45em] uppercase text-[10px] md:text-[11px] mb-5 md:mb-6">
           Autonomous Systems Lab
         </p>
 
-        <h1 className="text-white text-4xl md:text-6xl font-black leading-tight max-w-4xl">
+        {/* headline */}
+        <h1 className="text-white text-3xl sm:text-4xl md:text-6xl font-black leading-tight max-w-4xl">
           Engineering Systems that move, sense and think
         </h1>
 
-        <p className="text-gray-500 mt-6 max-w-xl text-base md:text-lg">
+        {/* subtext */}
+        <p className="text-gray-500 mt-5 md:mt-6 max-w-xl text-sm sm:text-base md:text-lg">
           Robotics • Embedded AI • IoT Infrastructure • Drone Systems
         </p>
 
         {/* divider */}
-        <div className="w-28 h-px bg-white/20 mt-10" />
+        <div className="w-20 md:w-28 h-px bg-white/20 mt-8 md:mt-10" />
 
-        {/* 🔘 CTA BUTTONS (ENLARGED) */}
-        <div className="mt-14 flex flex-col sm:flex-row gap-5">
+        {/* buttons */}
+        <div className="mt-10 md:mt-14 flex flex-col sm:flex-row gap-3 md:gap-5 w-full sm:w-auto">
 
           <button
             onClick={() => navigate('/projects')}
-            className="px-10 py-4 text-lg font-semibold bg-white text-black hover:bg-gray-200 transition"
+            className="w-full sm:w-auto px-6 md:px-10 py-3 md:py-4 text-base md:text-lg font-semibold bg-white text-black hover:bg-gray-200 transition"
           >
             Explore Work
           </button>
 
           <button
             onClick={() => navigate('/about#contact')}
-            className="px-10 py-4 text-lg font-semibold border border-white/30 text-white hover:border-white transition"
+            className="w-full sm:w-auto px-6 md:px-10 py-3 md:py-4 text-base md:text-lg font-semibold border border-white/30 text-white hover:border-white transition"
           >
             Contact
           </button>
