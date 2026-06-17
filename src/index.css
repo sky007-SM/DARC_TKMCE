@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #000;
+  color: white;
+  font-family: 'Space Grotesk', sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.12);
+}
+
+/* Noise */
+.noise-layer {
+  background-image:
+    radial-gradient(rgba(255,255,255,0.08) 1px, transparent 1px);
+
+  background-size: 3px 3px;
+
+  mix-blend-mode: soft-light;
+}
+
+/* Selection */
+::selection {
+  background: rgba(255,0,0,0.25);
+  color: white;
+}
+
+/* Smooth image rendering */
+img {
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+/* Better text rendering */
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-none {
+  scrollbar-width: none;
+}
+
+.gallery-scrollbar::-webkit-scrollbar {
+  height: 6px;
+}
+
+.gallery-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.gallery-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.15);
+  border-radius: 999px;
+}

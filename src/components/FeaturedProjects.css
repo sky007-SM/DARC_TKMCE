@@ -1,0 +1,26 @@
+.featured-wrapper {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+  }
+  
+  .featured-marquee {
+    display: flex;
+    width: max-content;
+    animation: featured-scroll 45s linear infinite;
+    will-change: transform;
+  }
+  
+  .featured-marquee.paused {
+    animation-play-state: paused;
+  }
+  
+  @keyframes featured-scroll {
+    from {
+      transform: translateX(0);
+    }
+  
+    to {
+      transform: translateX(-50%);
+    }
+  }
