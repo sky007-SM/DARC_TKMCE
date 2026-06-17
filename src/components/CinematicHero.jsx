@@ -47,7 +47,7 @@ export default function CinematicHero() {
 
         {/* headline */}
         <h1 className="text-white text-3xl sm:text-4xl md:text-6xl font-black leading-tight max-w-3xl md:max-w-4xl">
-          Systems that move, sense and think
+          Building Systems that move, sense and think
         </h1>
 
         {/* subtext */}
