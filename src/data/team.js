@@ -41,13 +41,13 @@ export const execom = [
     image: execom3,
   },
   {
-    name: 'Ribin KV',
-    role: 'Components Manager',
+    name: 'Pranav Krishna M D',
+    role: 'Media',
     image: execom4,
   },
   {
-    name: 'Pranav Krishna M D',
-    role: 'Media',
+    name: 'Ribin K V',
+    role: 'Components Manager',
     image: execom5,
   },
   {

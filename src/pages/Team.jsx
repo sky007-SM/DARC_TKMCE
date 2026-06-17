@@ -82,7 +82,7 @@ const Team = () => {
                     </h3>
 
                     <p className="text-red-400 text-xs md:text-sm mt-1">
-                      Executive Committee
+                      {member.role}
                     </p>
 
                   </div>
