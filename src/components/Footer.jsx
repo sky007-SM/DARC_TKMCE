@@ -103,7 +103,7 @@ const Footer = () => {
 
           {/* LEFT BOTTOM */}
           <div className="flex flex-col md:flex-row md:gap-6 gap-2">
-            <p>© 2026 DARC</p>
+            <p>© 2025 DARC</p>
             <p>Built for Research & Engineering</p>
           </div>
 

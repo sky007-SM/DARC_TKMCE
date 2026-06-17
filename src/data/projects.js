@@ -30,6 +30,12 @@ import hexacopterGallery2 from '../assets/galleries/hexacopter/2.png'
 import darcyGallery1 from '../assets/galleries/darcy/1.png'
 import darcyGallery2 from '../assets/galleries/darcy/2.png'
 import darcyGallery3 from '../assets/galleries/darcy/3.png'
+import evaGallery1 from '../assets/galleries/eva/1.png'
+import evaGallery2 from '../assets/galleries/eva/2.png'
+import evaGallery3 from '../assets/galleries/eva/3.png'
+import evaGallery4 from '../assets/galleries/eva/4.png'
+import evaBanner from '../assets/project-banners/eva.png'
+import eva from '../assets/projects/eva.png'
 
 
 export const projects = [
@@ -409,4 +415,66 @@ export const projects = [
           'UAV Design'
         ]
       },
+      {
+        slug: 'eva-smart-home-security-automation-controller',
+      
+        title: 'EVA',
+      
+        subtitle: 'Self-Hosted Smart Home Security & Automation System',
+      
+        image: eva,
+
+        gallery: [
+          evaGallery1,
+          evaGallery2,
+          evaGallery3,
+          evaGallery4,
+        ],
+      
+        banner: evaBanner, 
+      
+        bannerPosition: 'center 45%',
+      
+        category: 'IoT & Smart Systems',
+      
+        description: `
+      EVA is a self-hosted home security and automation controller that integrates motion detection, door/window sensors, live camera feeds, and smart device control into a single unified dashboard.
+      
+      Built on affordable embedded hardware, EVA provides homeowners with real-time monitoring, instant alerts, and complete local control without relying on cloud services or subscription models.
+      
+      Features:
+      - Real-time motion detection with instant mobile alerts
+      - Centralized dashboard for smart home device control
+      - Live camera feed access from any browser or device
+      - Face detection system to distinguish family members from intruders
+      - Door and window sensor integration with tamper alerts
+      - Fully offline-capable system (no cloud dependency)
+      - Automated routines (e.g., lights off on sleep, lock on exit)
+      - LPG leakage detection with smart ventilation response system
+      
+      EVA is designed as a privacy-focused smart home platform, combining security, automation, and emergency response into a single edge-controlled system.
+        `,
+      
+        members: [
+          'Kashinath A',
+          'Navajyoth Krishnan D',
+          'Gouri',
+          'Steve Thomas',
+        ],
+      
+        tags: [
+          'IoT',
+          'Raspberry Pi',
+          'ESP32',
+          'Home Automation',
+          'Computer Vision',
+          'Face Recognition',
+          'Motion Detection',
+          'Smart Security',
+          'Edge Computing',
+          'Embedded Systems',
+          'LPG Gas Detection',
+          'Smart Ventilation'
+        ],
+      }
 ]

@@ -27,34 +27,42 @@ export const faculty = {
 export const execom = [
   {
     name: 'Kashinath A',
+    role: 'Head of DARC | Drone Dept.',
     image: execom1,
   },
   {
     name: 'Navajyoth Krishnan D',
+    role: 'Robotics and IoT',
     image: execom2,
   },
   {
     name: 'Nithin J Kumar',
+    role: 'Robotics and IoT',
     image: execom3,
   },
   {
     name: 'Ribin KV',
+    role: 'Components Manager',
     image: execom4,
   },
   {
     name: 'Pranav Krishna M D',
+    role: 'Media',
     image: execom5,
   },
   {
     name: 'Sona Sajan',
+    role: 'Documentation',
     image: execom6,
   },
   {
     name: 'Fathima Nazarin',
+    role: 'Event Manager',
     image: execom7,
   },
   {
     name: 'Niranjan Unnikrishnan',
+    role: 'Web Developer',
     image: execom8,
   },
 ]
