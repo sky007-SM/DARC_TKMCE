@@ -464,7 +464,6 @@ export const projects = [
       
         tags: [
           'IoT',
-          'Raspberry Pi',
           'ESP32',
           'Home Automation',
           'Computer Vision',
