@@ -17,15 +17,7 @@ const Home = () => {
 
         {/* BACKGROUND LAYER */}
         <div className="fixed inset-0 -z-10 opacity-70 md:opacity-100">
-          <LiquidEther
-            colors={['#5227FF', '#FF9FFC', '#B497CF']}
-            mouseForce={18}
-            cursorSize={120}
-            isViscous
-            viscous={28}
-            resolution={0.6}
-            autoDemo
-          />
+          
         </div>
 
         {/* DARK OVERLAY */}
