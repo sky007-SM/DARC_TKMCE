@@ -35,6 +35,7 @@ export const execom = [
     name: 'Navajyoth Krishnan D',
     role: 'Robotics and IoT',
     image: execom2,
+    imagePosition: 'center 40%'
   },
   {
     name: 'Nithin J Kumar',
@@ -68,6 +69,7 @@ export const execom = [
     name: 'Niranjan Unnikrishnan',
     role: 'Web Developer',
     image: execom8,
+    imagePosition: 'center 40%'
   },
 ]
 
