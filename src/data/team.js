@@ -41,7 +41,7 @@ export const execom = [
     image: execom3,
   },
   {
-    name: 'Pranav Krishna M D',
+    name: 'Pranav Krishna M',
     role: 'Media',
     image: execom4,
   },
@@ -98,6 +98,10 @@ export const alumni = [
   },
   {
     name: 'Kaushik V',
+    image: alumni8,
+  },
+  {
+    name: '',
     image: alumni8,
   },
 ]
