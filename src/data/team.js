@@ -17,6 +17,7 @@ import alumni5 from '../assets/teams/alumni/alumni5.jpg'
 import alumni6 from '../assets/teams/alumni/alumni6.jpg'
 import alumni7 from '../assets/teams/alumni/alumni7.jpg'
 import alumni8 from '../assets/teams/alumni/alumni8.jpg'
+import alumni9 from '../assets/teams/alumni/alumni9.jpg'
 
 export const faculty = {
   name: 'Dr Nishanth N',
@@ -39,6 +40,7 @@ export const execom = [
     name: 'Nithin J Kumar',
     role: 'Robotics and IoT',
     image: execom3,
+    imagePosition: 'center 20%'
   },
   {
     name: 'Pranav Krishna M',
@@ -49,11 +51,13 @@ export const execom = [
     name: 'Ribin K V',
     role: 'Components Manager',
     image: execom5,
+    imagePosition: 'center 20%'
   },
   {
     name: 'Sona Sajan',
     role: 'Documentation',
     image: execom6,
+    imagePosition: 'center 25%'
   },
   {
     name: 'Fathima Nazarin',
@@ -101,7 +105,7 @@ export const alumni = [
     image: alumni8,
   },
   {
-    name: '',
-    image: alumni8,
+    name: 'Prakeerth Jisha',
+    image: alumni9,
   },
 ]
