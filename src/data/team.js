@@ -101,7 +101,7 @@ export const alumni = [
     image: alumni7,
   },
   {
-    name: 'Kaushik V',
+    name: 'V Kausik',
     image: alumni8,
   },
   {

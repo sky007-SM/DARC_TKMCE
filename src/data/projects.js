@@ -202,7 +202,7 @@ export const projects = [
       
         members: [
           'Renju P Pittapillil',
-          'Kaushik V',
+          'V Kausik',
           'Parthiv Roshan',
           'Jijo'
         ],
@@ -275,7 +275,7 @@ export const projects = [
           'Ajesh J S',
           'Asif Saif S',
           'Thariq T',
-          'Kaushik V',
+          'V Kausik',
           'Parthiv Roshan',
           'Aswin A'
         ],
@@ -403,7 +403,7 @@ export const projects = [
           'Ajesh J S',
           'Asif Saif S',
           'Parthiv Roshan',
-          'Kaushik V',
+          'V Kausik',
         ],
       
         tags: [
