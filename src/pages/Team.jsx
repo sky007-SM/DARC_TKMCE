@@ -73,6 +73,10 @@ const Team = () => {
                     src={member.image}
                     alt={member.name}
                     className="w-full h-[260px] md:h-[380px] object-cover transition-transform duration-700 group-hover:scale-105"
+                    style={{
+                      objectPosition:
+                        member.imagePosition || 'center 50%'
+                    }}
                   />
 
                   <div className="p-4 md:p-5">
