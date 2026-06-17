@@ -9,23 +9,24 @@ const Footer = () => {
         border-t
         border-white/5
         bg-black
-        py-24
-        px-6
+        py-16 md:py-24
+        px-4 md:px-6
       "
     >
 
-      {/* Atmosphere / Noise */}
-      <div className="absolute inset-0 opacity-[0.03] noise-layer" />
+      {/* Noise layer */}
+      <div className="absolute inset-0 opacity-[0.03] noise-layer pointer-events-none" />
 
-      {/* Giant Background Text */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none">
+      {/* Giant background text (mobile-safe) */}
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none overflow-hidden">
         <h2
           className="
             font-orbitron
-            text-[18vw]
+            text-[28vw] md:text-[18vw]
             font-black
             text-white/[0.02]
             tracking-tight
+            leading-none
           "
         >
           DARC
@@ -34,7 +35,7 @@ const Footer = () => {
 
       <div className="relative z-10 max-w-7xl mx-auto">
 
-        {/* Top Section */}
+        {/* TOP */}
         <div
           className="
             flex
@@ -42,20 +43,19 @@ const Footer = () => {
             md:flex-row
             md:items-end
             md:justify-between
-            gap-12
+            gap-8 md:gap-12
           "
         >
 
-          {/* Left */}
+          {/* LEFT */}
           <div>
             <h3
               className="
                 font-orbitron
-                text-4xl
-                md:text-5xl
+                text-3xl md:text-5xl
                 font-black
                 text-white
-                mb-4
+                mb-3 md:mb-4
               "
             >
               DARC
@@ -75,16 +75,17 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Right tagline */}
-          <div className="text-sm text-gray-600 uppercase tracking-[0.2em]">
+          {/* RIGHT TAGLINE */}
+          <div className="text-xs md:text-sm text-gray-600 uppercase tracking-[0.2em]">
             Autonomous Systems Research
           </div>
+
         </div>
 
-        {/* Divider */}
-        <div className="w-full h-px bg-white/5 my-14" />
+        {/* DIVIDER */}
+        <div className="w-full h-px bg-white/5 my-10 md:my-14" />
 
-        {/* Bottom Section */}
+        {/* BOTTOM */}
         <div
           className="
             flex
@@ -93,62 +94,47 @@ const Footer = () => {
             md:items-center
             md:justify-between
             gap-6
-            text-xs
+            text-[10px] md:text-xs
             uppercase
             tracking-[0.2em]
             text-gray-700
           "
         >
 
-          {/* Left bottom */}
+          {/* LEFT BOTTOM */}
           <div className="flex flex-col md:flex-row md:gap-6 gap-2">
             <p>© 2026 DARC</p>
             <p>Built for Research & Engineering</p>
           </div>
 
-          {/* Right social icons */}
-          <div className="flex items-center gap-5">
+          {/* SOCIAL ICONS */}
+          <div className="flex items-center gap-4 md:gap-5">
 
             <a
               href="https://www.instagram.com/darc_tkmce?igsh=MXQ3YzRrZmdhOTkxaQ=="
               target="_blank"
               rel="noopener noreferrer"
-              className="
-                text-gray-500
-                hover:text-pink-500
-                transition-colors
-                duration-300
-              "
+              className="text-gray-500 hover:text-pink-500 transition-colors duration-300"
             >
-              <FaInstagram size={22} />
+              <FaInstagram size={20} />
             </a>
 
             <a
               href="https://wa.me/919895492980"
               target="_blank"
               rel="noopener noreferrer"
-              className="
-                text-gray-500
-                hover:text-green-400
-                transition-colors
-                duration-300
-              "
+              className="text-gray-500 hover:text-green-400 transition-colors duration-300"
             >
-              <FaWhatsapp size={22} />
+              <FaWhatsapp size={20} />
             </a>
 
             <a
               href="https://www.linkedin.com/company/darc-tkmce/"
               target="_blank"
               rel="noopener noreferrer"
-              className="
-                text-gray-500
-                hover:text-blue-400
-                transition-colors
-                duration-300
-              "
+              className="text-gray-500 hover:text-blue-400 transition-colors duration-300"
             >
-              <FaLinkedin size={22} />
+              <FaLinkedin size={20} />
             </a>
 
           </div>
