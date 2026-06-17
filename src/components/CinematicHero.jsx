@@ -17,12 +17,12 @@ export default function CinematicHero() {
             cursorSize={110}
 
             isViscous
-            viscous={48}
+            viscous={32}
 
-            iterationsViscous={48}
-            iterationsPoisson={48}
+            iterationsViscous={32}
+            iterationsPoisson={32}
 
-            resolution={0.5}   /* ↓ IMPORTANT for mobile performance */
+            resolution={0.36}   /* ↓ IMPORTANT for mobile performance */
 
             isBounce={false}
 
