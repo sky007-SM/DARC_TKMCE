@@ -165,7 +165,6 @@ export const projects = [
             quadcopterGallery4,
           ],
       
-        banner: elbotBanner,
       
         banner: quadcopterBanner,
 
@@ -204,7 +203,8 @@ export const projects = [
           'Renju P Pittapillil',
           'V Kausik',
           'Parthiv Roshan',
-          'Jijo'
+          'Jijo',
+          'Vishnu',
         ],
       
         tags: [
